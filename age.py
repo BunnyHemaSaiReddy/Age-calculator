@@ -1,9 +1,6 @@
 import streamlit as s
 import time
 import calendar
-#import cv2
-#img=cv2.imread(r"C:\Users\user\OneDrive\Pictures\Screenshots\FB_IMG_1693589854767.png")
-#cv2.show("frame",img)
 def agecalculator():
     s.title("Age Calculator")
     t=time.localtime()
@@ -63,7 +60,6 @@ def agecalculator():
         s.success('no of minutes.     '+str(h*60+t.tm_min))
         s.info('no of seconds.     '+str(h*3600+t.tm_sec))
         s.balloons()
-s.image(r"C:\Users\user\OneDrive\Pictures\Screenshots\FB_IMG_1693589854767.png")
 button_css = """
     <style>
         .stButton {
